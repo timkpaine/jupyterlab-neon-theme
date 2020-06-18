@@ -21,6 +21,15 @@ const plugin: JupyterFrontEndPlugin<void> = {
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
+
+
+    manager.register({
+      name: 'JupyterLab Neon Night (Neon Dreams)',
+      isLight: false,
+      themeScrollbars: true,
+      load: () => manager.loadCSS(style),
+      unload: () => Promise.resolve(undefined)
+    });
   },
   autoStart: true
 };
